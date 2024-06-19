@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Position Sticky con Altura Variable</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    .contenedor1 {
+        position: sticky;
+        top: 0;
+        background-color: lightblue;
+        /* padding: 20px; */
+        width: 100%;
+        z-index: 1;
+    }
+
+    .contenedor2 {
+        position: sticky;
+        /* Altura inicial del primer contenedor + 20px de padding */
+        top: 0; 
+        background-color: lightcoral;
+        padding: 20px;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .contenido {
+        height: 1500px; /* Altura suficiente para hacer scroll */
+        background-color: #ccc;
+        padding: 20px;
+    }
+
+    .texto {
+        margin: 20px 0;
+    }
+</style>
+</head>
+<body>
+    <div class="contenedor1" id="contenedor1">Mientras los rebeldes se preparan para la batalla contra el Mundo Madre, se forjan vínculos inquebrantables, emergen héroes... y nacen leyendas.Mientras los rebeldes se preparan para la batalla contra el Mundo Madre, se forjan vínculos inquebrantables, emergen héroes... y nacen leyendas.Mientras los rebeldes se preparan para la batalla contra el Mundo Madre, se forjan vínculos inquebrantables, emergen héroes... y nacen leyendas.Mientras los rebeldes se preparan para la batalla contra el Mundo Madre, se forjan vínculos inquebrantables, emergen héroes... y nacen leyendas.Mientras los rebeldes se preparan para la batalla contra el Mundo Madre, se forjan vínculos inquebrantables, emergen héroes... y nacen leyendas.Mientras los rebeldes se preparan para la batalla contra el Mundo Madre, se forjan vínculos inquebrantables, emergen héroes... y nacen leyendas.Mientras los rebeldes se preparan para la batalla Mientras los rebeldes se preparan para la batalla contra el Mundo Madre, se forjan vínculos inquebrantables, emergen héroes... y nacen leyendas.Mientras los rebeldes se preparan para la batalla contra el Mundo Madre, se forjan vínculos inquebrantables, emergen héroes... y nacen leyendas.Mientras los rebeldes se preparan para la batalla contra el Mundo Madre, se forjan vínculos inquebrantables, emergen héroes... y nacen leyendas.Mientras los rebeldes se preparan para la batalla contra el Mundo Madre, se forjan vínculos inquebrantables, emergen héroes... y nacen leyendas.Mientras los rebeldes se preparan para la batalla contra el Mundo Madre, se forjan vínculos inquebrantables, emergen héroes... y nacen leyendas.Mientras los rebeldes se preparan para la batalla contra el Mundo Madre, se forjan vínculos inquebrantables, emergen héroes... y nacen leyendas.Mientras los rebeldes se preparan para la batalla contra el Mundo Madre, se forjan vínculos inquebrantables, emergen héroes... y nacen leyendas.Mientras los rebeldes se preparan para la batalla contra el Mundo Madre, se forjan vínculos inquebrantables, emergen héroes... y nacen leyendas.Mientras los rebeldes se preparan para la batalla contra el Mundo Madre, se forjan vínculos inquebrantables, emergen héroes... y nacen leyendas.Mientras los rebeldes se preparan para la batalla contra el Mundo Madre, se forjan vínculos inquebrantables, emergen héroes... y nacen leyendas.contra el Mundo Madre, se forjan vínculos inquebrantables, emergen héroes... y nacen leyendas.Contenedor 1 - Fijo en la parte superiorontenedor 1 - Fijo en la parte superiorontenedor 1 - Fijo en la parte superiorontenedor 1 - Fijo en la parte superiorontenedor 1 - Fijo en la parte superiorontenedor 1 - Fijo en la parte superiorontenedor 1 - Fijo en la parte superiorontenedor 1 - Fijo en la parte superiorontenedor 1 - Fijo en la parte superiorontenedor 1 - Fijo en la parte superiorontenedor 1 - Fijo en la parte superiorontenedor 1 - Fijo en la parte superiorontenedor 1 - Fijo en la parte superiorontenedor 1 - Fijo en la parte superiorontenedor 1 - Fijo en la parte superiorontenedor 1 - Fijo en la parte superiorontenedor 1 - Fijo en la parte superiorontenedor 1 - Fijo en la parte superiorontenedor 1 - Fijo en la parte superiorontenedor 1 - Fijo en la parte superiorontenedor 1 - Fijo en la parte superiorontenedor 1 - Fijo en la parte superiorontenedor 1 - Fijo en la parte superior</div>
+    <div class="contenido">
+        <!-- Contenido adicional para hacer scroll -->
+        <h2>Contenido Adicional</h2>
+        <p class="texto">Este es el contenido adicional para hacer scroll.</p>
+    </div>
+    <div class="contenedor2" id="contenedor2">Contenedor 2 - Fijo debajo del primer contenedor</div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <script>
+        window.addEventListener('scroll', function() {
+            var contenedor1 = document.getElementById('contenedor1');
+            var contenedor2 = document.getElementById('contenedor2');
+            contenedor2.style.top = (contenedor1.offsetHeight ) + 'px';
+            console.log(contenedor1.offsetHeight);
+        });
+    </script>
+
+</body>
+</html>
+

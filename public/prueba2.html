@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario de Película</title>
+</head>
+<body>
+    <h1>Formulario de Película</h1>
+    <form id="formularioPelicula" enctype="multipart/form-data">
+        <label for="titulo">Título:</label><br>
+        <input type="text" id="titulo" name="titulo" required><br><br>
+
+        <label for="resumenBreve">Resumen breve:</label><br>
+        <textarea id="resumenBreve" name="resumenBreve" required></textarea><br><br>
+
+        <label for="resumenExtenso">Resumen extenso:</label><br>
+        <textarea id="resumenExtenso" name="resumenExtenso" required></textarea><br><br>
+
+        <label for="lanzamiento">Lanzamiento:</label><br>
+        <input type="date" id="lanzamiento" name="lanzamiento" required><br><br>
+
+        <label for="actores">Actores (separados por comas):</label><br>
+        <input type="text" id="actores" name="actores" required><br><br>
+
+        <label for="genero">Género:</label><br>
+        <input type="text" id="genero" name="genero" required><br><br>
+
+        <label for="duracion">Duración:</label><br>
+        <input type="text" id="duracion" name="duracion" required><br><br>
+
+        <label for="calificacion">Calificación:</label><br>
+        <input type="text" id="calificacion" name="calificacion" required><br><br>
+
+        <label for="trailer">Trailer:</label><br>
+        <input type="file" id="trailer" name="trailer" accept="video/*"><br><br>
+
+        <label for="poster">Poster:</label><br>
+        <input type="file" id="poster" name="poster" accept="image/*"><br><br>
+
+        <label for="fondo">Fondo:</label><br>
+        <input type="file" id="fondo" name="fondo" accept="image/*"><br><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <script>
+        document.getElementById('formularioPelicula').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const formData = new FormData(this);
+
+            const actores = [formData.get('actores').split(',').map(actor => actor.trim())];
+            const genero = [formData.get('genero').split(',').map(genero => genero.trim())];
+
+            const jsonData = {
+                titulo: formData.get('titulo'),
+                resumenBreve: formData.get('resumenBreve'),
+                resumenExtenso: formData.get('resumenExtenso'),
+                lanzamiento: formData.get('lanzamiento'),
+                actores, 
+                genero,
+                duracion: formData.get('duracion'),
+                calificacion: formData.get('calificacion'),
+            };
+
+            // formData.delete('titulo');
+            // formData.delete('resumenBreve');
+            // formData.delete('resumenExtenso');
+            // formData.delete('lanzamiento');
+            // formData.delete('actores');
+            // formData.delete('genero');
+            // formData.delete('duracion');
+            // formData.delete('calificacion');
+            // formData.delete('usuario');
+
+            formData.append('jsonData', JSON.stringify(jsonData));
+
+            const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjIyYjE3MTk2MTM1ZTY0NWRkNDYyYTciLCJpYXQiOjE3MTYzNjg3OTAsImV4cCI6MTcxNjM3MjM5MH0.L0y18LIRZpWfDINOJcNWFRITEPdi2Rx_s9e3k15QQhA'; // Reemplaza 'tu-token-aqui' con el valor real de tu token
+
+            fetch('http://localhost:8080/api/pelicula', {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'x-token': token
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Respuesta del servidor:', data);
+                alert('Película agregada exitosamente');
+            })
+            .catch(error => {
+                console.error('Error al enviar la película:', error);
+                alert('Hubo un error al enviar la película');
+            });
+        });
+    </script>
+</body>
+</html>

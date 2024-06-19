@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Cuevana 3</title>
+    <link rel="stylesheet" href="./css/normalice.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="img/cuevana.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    
+</head>
+<body>
+    <header class="header">
+        <div class="header__contenedor">
+            <div class="header__flex">
+                <div class="header__wrapper">
+                    <div class="header__contenedor-imagen">
+                        <a class="header__link-logo" href="index.html">
+                            <img class="header__logo" src="./img/cuevana3.avif" alt="logo">
+                        </a>
+                    </div>
+                    <div class="contenedor__hamburger">
+                        <div class="hamburger">
+                            <div class="hamburger__bar"></div>
+                            <div class="hamburger__bar"></div>
+                            <div class="hamburger__bar"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__contenedor-nav">
+                    <div class="contenedor__menu">
+                        <nav class="nav">
+                            <ul class="menu__lista">
+                                <li class="menu__item">
+                                    <a class="menu__link" href="index.html">Inicio</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__link" href="#">Peliculas
+                                        <img class="menu__link-icon-down" src="./img/down.png" alt="">
+                                    </a>
+                                    <ul class="sub-menu">
+                                        <li class="sub-menu__item"><a class="sub__menu-link" href="/peliculas">Últimas publicadas</a></li>
+                                        <li class="sub-menu__item"><a class="sub__menu-link" href="/peliculas/estrenos">Estrenos</a></li>
+                                        <li class="sub-menu__item"><a class="sub__menu-link" href="/peliculas/tendencias/semana">Tendencias semana</a></li>
+                                        <li class="sub-menu__item"><a class="sub__menu-link" href="/peliculas/tendencias/dia">Tendencias día</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__link" href="#">Series
+                                        <img class="menu__link-icon-down" src="./img/down.png" alt="">
+                                    </a>
+                                    <ul class="sub-menu">
+                                        <li class="sub-menu__item"><a class="sub__menu-link" href="/series">Series</a></li>
+                                        <li class="sub-menu__item"><a class="sub__menu-link" href="/series/estrenos">Estrenos</a></li>
+                                        <li class="sub-menu__item"><a class="sub__menu-link" href="/episodios">Episodios</a></li>
+                                        <li class="sub-menu__item"><a class="sub__menu-link" href="/series/tendencias/dia">Tendencias día</a></li>
+                                        <li class="sub-menu__item"><a class="sub__menu-link" href="/series/tendencias/semana">Tendencias semana</a></li>
+                                    </ul>                                    
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__link" href="#">Generos
+                                        <img class="menu__link-icon-down" src="./img/down.png" alt="">
+                                    </a>
+                                    <ul class="sub-menu sub-menu-genero">
+                                        
+                                    </ul>                                    
+                                </li>
+                            </ul>
+                        </nav>
+                        <form class="form__busqueda">
+                            <div class="form__contenedor-boton">
+                                <button class="btn__search" type="submit">
+                                    <img src="./img/search-svgrepo-com (2).svg" alt="search">
+                                </button>
+                            </div>
+                            <input class="form__input-busqueda" placeholder="Buscador..." type="search" name="" id="">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>    
+    <section class="hero">
+        <div class="hero__flex">
+            <div class="hero__contenedor-imagen">
+                <img class="hero__imagen skeleton" src="https://res.cloudinary.com/dj5mpbo6m/image/upload/v1716530290/h4se8vsvjxovmbymfnus.png" alt="">
+            </div>
+            <div class="hero__contenedor">
+                <div class="hero__body ">
+                    <div class="hero__body-contenido">
+                        <div class="hero__contenido-principal">
+                            <a class="hero__titutlo" href="#">
+                                <div class="skeleton skeleton--titutlo"></div>
+                            </a>
+                            <div class="datos__contenedor"> 
+                                <p class="dato dato_calificacion bloque">
+                                    <span class="bloque skeleton skeleton--texto"></span>
+                                </p>
+                                <p class="dato dato__duracion bloque">
+                                    <span class="bloque skeleton skeleton--texto"></span>
+                                </p>
+                                <p class="dato dato__year bloque">
+                                    <span class="bloque skeleton skeleton--texto"></span>
+                                </p>
+                            </div>
+                            <div class="hero__contenedor-informacion">
+                                <p class="hero__descripcion bloque">
+                                    <span class="bloque skeleton skeleton--texto"></span>
+                                    <span class="bloque skeleton skeleton--texto"></span>
+                                    <span class="bloque skeleton skeleton--texto"></span>
+                                </p>
+                            </div>
+                            <div class="hero__footer">
+                                <a class="boton boton--altura-pequena boton__ver-pelicula skeleton" href="#"></a>
+                            </div>
+                        </div>
+                        <div class="hero__contenedor-video ocultar">
+                            <video class="hero__video ocultar skeleton" autoplay preload="auto" >
+                                <source class="direccion__video" src="" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero__contenedor-boton-cerrar ocultar">
+                    <button class="hero__boton-cerrar"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+       
+    <main class="peliculas">
+        <div class="peliculas__contenedor">
+            <div class="contenido__grid">
+                <div class="seccion__peliculas">
+                    <div class="menu">
+                        <div class="menu__contenedor">
+                            <h2 class="menu__titulo menu-inferior__titulo--color"><span class="menu__titulo-color-resaltar-palabra">Películas</span> Online:</h2>
+                            <ul class="menu-inferior__lista menu-inferior-lista__intermedio">
+                                <a class="menu-inferior__link bloque">
+                                    <div class="skeleton skeleton--cortoREM"></div>
+                                </a>
+                                <a class="menu-inferior__link bloque">
+                                    <div class="skeleton skeleton--cortoREM"></div>
+                                </a>
+                                <a class="menu-inferior__link bloque">
+                                    <div class="skeleton skeleton--cortoREM"></div>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                    <ul class="peliculas__lista">
+                        <li class="card card__carga">
+                            <div class="card__body">
+                                <a class="card__enlace">
+                                    <div class="card__informacion">
+                                        <div class="card__contenedor-imagen">
+                                            <img class="card__imagen" src="https://res.cloudinary.com/dj5mpbo6m/image/upload/v1716530290/h4se8vsvjxovmbymfnus.png">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="card card__carga">
+                            <div class="card__body">
+                                <a class="card__enlace">
+                                    <div class="card__informacion">
+                                        <div class="card__contenedor-imagen">
+                                            <img class="card__imagen" src="https://res.cloudinary.com/dj5mpbo6m/image/upload/v1716530290/h4se8vsvjxovmbymfnus.png">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="card card__carga">
+                            <div class="card__body">
+                                <a class="card__enlace">
+                                    <div class="card__informacion">
+                                        <div class="card__contenedor-imagen">
+                                            <img class="card__imagen" src="https://res.cloudinary.com/dj5mpbo6m/image/upload/v1716530290/h4se8vsvjxovmbymfnus.png">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="card card__carga">
+                            <div class="card__body">
+                                <a class="card__enlace">
+                                    <div class="card__informacion">
+                                        <div class="card__contenedor-imagen">
+                                            <img class="card__imagen" src="https://res.cloudinary.com/dj5mpbo6m/image/upload/v1716530290/h4se8vsvjxovmbymfnus.png">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="card card__carga">
+                            <div class="card__body">
+                                <a class="card__enlace">
+                                    <div class="card__informacion">
+                                        <div class="card__contenedor-imagen">
+                                            <img class="card__imagen" src="https://res.cloudinary.com/dj5mpbo6m/image/upload/v1716530290/h4se8vsvjxovmbymfnus.png">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="card card__carga">
+                            <div class="card__body">
+                                <a class="card__enlace">
+                                    <div class="card__informacion">
+                                        <div class="card__contenedor-imagen">
+                                            <img class="card__imagen" src="https://res.cloudinary.com/dj5mpbo6m/image/upload/v1716530290/h4se8vsvjxovmbymfnus.png">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="card card__carga">
+                            <div class="card__body">
+                                <a class="card__enlace">
+                                    <div class="card__informacion">
+                                        <div class="card__contenedor-imagen">
+                                            <img class="card__imagen" src="https://res.cloudinary.com/dj5mpbo6m/image/upload/v1716530290/h4se8vsvjxovmbymfnus.png">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="card card__carga">
+                            <div class="card__body">
+                                <a class="card__enlace">
+                                    <div class="card__informacion">
+                                        <div class="card__contenedor-imagen">
+                                            <img class="card__imagen" src="https://res.cloudinary.com/dj5mpbo6m/image/upload/v1716530290/h4se8vsvjxovmbymfnus.png">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="card card__carga">
+                            <div class="card__body">
+                                <a class="card__enlace">
+                                    <div class="card__informacion">
+                                        <div class="card__contenedor-imagen">
+                                            <img class="card__imagen" src="https://res.cloudinary.com/dj5mpbo6m/image/upload/v1716530290/h4se8vsvjxovmbymfnus.png">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="card card__carga">
+                            <div class="card__body">
+                                <a class="card__enlace">
+                                    <div class="card__informacion">
+                                        <div class="card__contenedor-imagen">
+                                            <img class="card__imagen" src="https://res.cloudinary.com/dj5mpbo6m/image/upload/v1716530290/h4se8vsvjxovmbymfnus.png">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="pelicula__formulario">
+                        <a class="boton botonMostrarMasPeliculas" href="">Cargar Más Peliculas</a>
+                    </div>
+                </div>
+                <aside class="proximos-estrenos">
+                    <div class="menu__lateral">
+                        <h2 class="menu__lateral-titulo bloque menu-inferior__titulo--color">
+                            <span class="menu__titulo-color-resaltar-palabra">Proximos</span> Estrenos
+                            <!-- <span class="bloque skeleton skeleton--titutlo"></span> -->
+                        </h2>
+                        <ul class="menu__lateral-contenedor">
+                            <a class="menu-inferior__link menu__link--lateral menu-inferior__link--activo" href="#">
+                                <!-- <span class="bloque skeleton skeleton--titutlo skeleton--top"></span> -->
+                                peliculas
+                            </a>
+                        </ul>
+                    </div>
+                    <ul class="proximos-estrenos__lista">
+                        <li class="card">
+                            <div class="card__body">
+                                <!-- <a class="card__enlace" href="#"> -->
+                                    <div class="card__informacion--aside">
+                                        <div class="card__contenedor-imagen">
+                                            <!-- <div class="skeleton skeleton--bloque"></div> -->
+                                            <!-- <img class="card__imagen card__imagen--aside" src="https://res.cloudinary.com/dj5mpbo6m/image/upload/v1715150114/Poster%20peliculas/e4gcpoi77lhwwgxo1c3g.jpg" alt=""> -->
+                                            <img class="card__imagen card__imagen--aside" src="https://res.cloudinary.com/dj5mpbo6m/image/upload/v1715153892/Poster%20peliculas/od4u5u7tvwm1mntx9aj0.jpg" alt="">
+                                        </div>                                            
+                                        <div class="card__descripcion--aside">
+                                            <p class="card__descripcion-titulo bloque">
+                                                <!-- <span class="bloque skeleton skeleton--titutlo"></span> -->
+                                                El Reino del Planeta de los Simios
+                                            </p>
+                                            <p class="dato__genero bloque">
+                                                Ciencia ficción
+                                            </p>
+                                        </div>
+                                    </div>
+                                <!-- </a> -->
+                            </div>
+                        </li>                                                
+                        <li class="card">
+                            <div class="card__body">
+                                <!-- <a class="card__enlace" href="#"> -->
+                                    <div class="card__informacion--aside">
+                                        <div class="card__contenedor-imagen">
+                                            <!-- <div class="skeleton skeleton--bloque"></div> -->
+                                            <!-- <img class="card__imagen card__imagen--aside" src="https://res.cloudinary.com/dj5mpbo6m/image/upload/v1715150114/Poster%20peliculas/e4gcpoi77lhwwgxo1c3g.jpg" alt=""> -->
+                                            <img class="card__imagen card__imagen--aside" src="https://res.cloudinary.com/dj5mpbo6m/image/upload/v1715150001/Poster%20peliculas/zjssp0lkej7oo9kxhuue.jpg" alt="">
+                                        </div>                                            
+                                        <div class="card__descripcion--aside">
+                                            <p class="card__descripcion-titulo bloque">
+                                                <!-- <span class="bloque skeleton skeleton--titutlo"></span> -->
+                                                Intensamente 2
+                                            </p>
+                                            <div class="datos__contenedor">
+                                                <p class="dato dato_calificacion dato_calificacion--small bloque">
+                                                    <!-- <span class="bloque skeleton skeleton--titutlo"></span> -->
+                                                </p>
+                                                <p class="dato dato--font-small dato__año bloque">
+                                                    <!-- <span class="bloque skeleton skeleton--titutlo"></span> -->
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <!-- </a> -->
+                            </div>
+                        </li>                                                
+                        <li class="card">
+                            <div class="card__body">
+                                <!-- <a class="card__enlace" href="#"> -->
+                                    <div class="card__informacion--aside">
+                                        <div class="card__contenedor-imagen">
+                                            <!-- <div class="skeleton skeleton--bloque"></div> -->
+                                            <img class="card__imagen card__imagen--aside" src="https://res.cloudinary.com/dj5mpbo6m/image/upload/v1715150114/Poster%20peliculas/e4gcpoi77lhwwgxo1c3g.jpg" alt="">
+                                        </div>                                            
+                                        <div class="card__descripcion--aside">
+                                            <p class="card__descripcion-titulo bloque">
+                                                <!-- <span class="bloque skeleton skeleton--titutlo"></span> -->
+                                                El Joker
+                                            </p>
+                                            <div class="datos__contenedor">
+                                                <p class="dato dato_calificacion dato_calificacion--small bloque">
+                                                    <!-- <span class="bloque skeleton skeleton--titutlo"></span> -->
+                                                </p>
+                                                <p class="dato dato--font-small dato__año bloque">
+                                                    <!-- <span class="bloque skeleton skeleton--titutlo"></span> -->
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <!-- </a> -->
+                            </div>
+                        </li>                                                
+                        <li class="card">
+                            <div class="card__body">
+                                <!-- <a class="card__enlace" href="#"> -->
+                                    <div class="card__informacion--aside">
+                                        <div class="card__contenedor-imagen">
+                                            <!-- <div class="skeleton skeleton--bloque"></div> -->
+                                            <!-- <img class="card__imagen card__imagen--aside" src="https://res.cloudinary.com/dj5mpbo6m/image/upload/v1715150114/Poster%20peliculas/e4gcpoi77lhwwgxo1c3g.jpg" alt=""> -->
+                                            <img class="card__imagen card__imagen--aside" src="https://res.cloudinary.com/dj5mpbo6m/image/upload/v1715150600/Poster%20peliculas/jv0geyxvbhbqbur3olax.jpg" alt="">
+                                        </div>                                            
+                                        <div class="card__descripcion--aside">
+                                            <p class="card__descripcion-titulo bloque">
+                                                <!-- <span class="bloque skeleton skeleton--titutlo"></span> -->
+                                                Garra
+                                            </p>
+                                            <!-- <div class="datos__contenedor"> -->
+                                                <!-- <p class="dato dato_calificacion dato_calificacion--small bloque">
+                                                    <span class="bloque skeleton skeleton--titutlo"></span>
+                                                </p>
+                                                <p class="dato dato--font-small dato__año bloque">
+                                                    <span class="bloque skeleton skeleton--titutlo"></span>
+                                                </p> -->
+                                            <!-- </div> -->
+                                            <div class="datos__contenedor"> 
+                                                <p class="dato dato__duracion">102 minutos</p>
+                                                <p class="dato dato__year">2024</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <!-- </a> -->
+                            </div>
+                        </li>                                                
+                                                
+                    </ul>
+                </aside>
+            </div>
+        </div>
+    </main>
+   
+    <footer class="footer">
+        <div class="footer__contenedor">
+            <div class="footer__flex">
+                <div class="footer__contenedor-imagen">
+                    <a href="index.html">
+                        <img class="footer__logo" src="./img/cuevana3.avif" alt="logo">
+                    </a>
+                </div>
+                <div class="footer__redes">
+                    <ul class="footer__lista-redes">
+                        <li class="footer__item-red"><a class="footer__link-red" href="https://www.facebook.com/cuevana3com/?locale=es_LA" target="_blank"><img class="footer__imagen-red" src="./img/icon-faceboock.png" alt=""></li></a>
+                        <li class="footer__item-red"><a class="footer__link-red" href="https://x.com/cuevana3_io?lang=es" target="_blank"><img class="footer__imagen-red" src="./img/twitter.png" alt=""></li></a>
+                        <li class="footer__item-red"><a class="footer__link-red" href="https://www.youtube.com/@cuevana_3/videos" target="_blank"><img class="footer__imagen-red" src="./img/icon-youtube.png" alt=""></li></a>
+                    </ul>
+                </div>
+            </div>
+            <p class="footer__derechos-reservados">&copy; <span class="footer__year"></span> Cuevana 3. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="./js/peticiones.js"></script>
+    <script src="./js/selectores-plantilla.js"></script>
+    <script src="./js/interaccion-plantilla.js"></script>
+    <script src="./js/crear-elementos.js"></script>
+    <script src="./js/hero-configuracion.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
+
+
+
+

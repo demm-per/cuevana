@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Cuevana 3</title>
+    <link rel="stylesheet" href="./css/normalice.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="img/cuevana.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__contenedor">
+            <div class="header__flex">
+                <div class="header__wrapper">
+                    <div class="header__contenedor-imagen">
+                        <a class="header__link-logo" href="#">
+                            <img class="header__logo" src="./img/cuevana3.avif" alt="logo">
+                        </a>
+                    </div>
+                    <div class="contenedor__hamburger">
+                        <div class="hamburger">
+                            <div class="hamburger__bar"></div>
+                            <div class="hamburger__bar"></div>
+                            <div class="hamburger__bar"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__contenedor-nav">
+                    <div class="contenedor__menu">
+                        <nav class="nav">
+                            <ul class="menu__lista">
+                                <li class="menu__item">
+                                    <a class="menu__link" href="#">Inicio</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__link" href="#">Peliculas
+                                        <img class="menu__link-icon-down" src="./img/down.png" alt="">
+                                    </a>
+                                    <ul class="sub-menu">
+                                        <li class="sub-menu__item"><a class="sub__menu-link" href="/peliculas">Últimas publicadas</a></li>
+                                        <li class="sub-menu__item"><a class="sub__menu-link" href="/peliculas/estrenos">Estrenos</a></li>
+                                        <li class="sub-menu__item"><a class="sub__menu-link" href="/peliculas/tendencias/semana">Tendencias semana</a></li>
+                                        <li class="sub-menu__item"><a class="sub__menu-link" href="/peliculas/tendencias/dia">Tendencias día</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__link" href="#">Series
+                                        <img class="menu__link-icon-down" src="./img/down.png" alt="">
+                                    </a>
+                                    <ul class="sub-menu">
+                                        <li class="sub-menu__item"><a class="sub__menu-link" href="/series">Series</a></li>
+                                        <li class="sub-menu__item"><a class="sub__menu-link" href="/series/estrenos">Estrenos</a></li>
+                                        <li class="sub-menu__item"><a class="sub__menu-link" href="/episodios">Episodios</a></li>
+                                        <li class="sub-menu__item"><a class="sub__menu-link" href="/series/tendencias/dia">Tendencias día</a></li>
+                                        <li class="sub-menu__item"><a class="sub__menu-link" href="/series/tendencias/semana">Tendencias semana</a></li>
+                                    </ul>                                    
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__link" href="#">Generos
+                                        <img class="menu__link-icon-down" src="./img/down.png" alt="">
+                                    </a>
+                                    <ul class="sub-menu sub-menu-genero">
+                                        <li class="sub-menu__item"><a class="sub__menu-link" href="/genero/accion">Acción</a></li>
+                                        <li class="sub-menu__item"><a class="sub__menu-link" href="/genero/aventura">Aventura</a></li>
+                                        <li class="sub-menu__item"><a class="sub__menu-link" href="/genero/animacion">Animación</a></li>
+                                        <li class="sub-menu__item"><a class="sub__menu-link" href="/genero/ciencia-ficcion">Ciencia ficción</a></li>
+                                        <li class="sub-menu__item"><a class="sub__menu-link" href="/genero/crimen">Crimen</a></li>
+                                        <li class="sub-menu__item"><a class="sub__menu-link" href="/genero/drama">Drama</a></li>
+                                        <li class="sub-menu__item"><a class="sub__menu-link" href="/genero/familia">Familia</a></li>
+                                        <li class="sub-menu__item"><a class="sub__menu-link" href="/genero/fantasia">Fantasía</a></li>
+                                        <li class="sub-menu__item"><a class="sub__menu-link" href="/genero/misterio">Misterio</a></li>
+                                        <li class="sub-menu__item"><a class="sub__menu-link" href="/genero/romance">Romance</a></li>
+                                        <li class="sub-menu__item"><a class="sub__menu-link" href="/genero/suspense">Suspense</a></li>
+                                        <li class="sub-menu__item"><a class="sub__menu-link" href="/genero/terror">Terror</a></li>
+                                    </ul>                                    
+                                </li>
+                            </ul>
+                        </nav>
+                        <form class="form__busqueda">
+                            <div class="form__contenedor-boton">
+                                <button class="btn__search" type="submit">
+                                    <img src="./img/search-svgrepo-com (2).svg" alt="search">
+                                </button>
+                            </div>
+                            <input class="form__input-busqueda" placeholder="Buscador..." type="search" name="" id="">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>    
+    <section class="hero">
+        <div class="hero__contenedor-imagen">
+            <img class="hero__imagen" src="./img/hero.jpeg" alt="">
+        </div>
+        <div class="hero__contenedor">
+            <div class="hero__contenido">
+                <a class="hero__titutlo">Rebel Moon - Parte Dos: La Guerrera que Deja Marcas <span class="hero__genero">Película</span></a>
+                <div class="datos__contenedor">
+                    <p class="dato dato_calificacion dato_calificacion--small">6.05/<span class="dato__rango dato__rango--small">10</span></p>
+                    <p class="dato  dato__duracion">2h 03min</p>
+                    <p class="dato  dato__año">2024</p>
+                </div>
+                <div class="hero__informacion">
+                    <p class="hero__descripcion">Mientras los rebeldes se preparan para la batalla contra el Mundo Madre, se forjan vínculos inquebrantables, emergen héroes... y nacen leyendas.</p>
+                </div>
+                <a class="boton hero__boton" href="#">Ver Película</a>
+            </div>
+        </div>
+    </section>
+    
+    <main class="peliculas">
+        <div class="peliculas__contenedor">
+            <h1 class="peliculas__titulo">Todas las películas de cuevana 3 Online Gratis</h1>
+            <div class="peliculas__flex">
+                <div class="seccion__peliculas">
+                    <div class="menu-inferior">
+                        <h2 class="menu-inferior__titulo">Películas Online</h2>
+                        <ul class="menu-inferior__lista">
+                            <a class="menu-inferior__link menu-inferior__link--activo" href="#">Últimas</a>
+                            <a class="menu-inferior__link" href="#">Tendencia</a>
+                            <a class="menu-inferior__link" href="#">Estrenos</a>
+                        </ul>
+                    </div>
+                    <ul class="peliculas__lista">
+                        <li class="card">
+                            <div class="card__body">
+                                <a class="card__enlace" href="#">
+                                    <div class="card__informacion">
+                                        <div class="card__contenedor-imagen">
+                                            <img class="card__imagen" src="https://image.tmdb.org/t/p/original/1wIp3yBijtgEpQrHZLqoX5laGLJ.jpg" alt="">
+                                            <p class="card__year">20233</p>
+                                        </div>
+                                        <div class="card__descripcion">
+                                            <p class="card__descripcion-titulo">Batman</p>
+                                            <div class="datos__contenedor">
+                                                <p class="dato dato_calificacion dato_calificacion--small">6.05/<span class="dato__rango dato__rango--small">10</span></p>
+                                                <p class="dato dato--font-small dato__duracion">2h 03min</p>
+                                                <p class="dato dato--font-small dato__año">2024</p>
+                                            </div>
+                                            <p class="card__sinopsis">Batman lidera a la Liga de la Justicia en una batalla épica contra una amenaza cósmica que pone en peligro el universo.</p>
+                                            <p class="card__atributo card__genero"><span class="card__propiedad">Genero:</span> Acción</p>
+                                            <p class="card__atributo card__actores"><span class="card__propiedad">Actores:</span> Brus Wain</p>
+                                        </div>
+                                    </div>
+                                    <p class="card__titulo">Batman la pelea final en gotica</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="card">
+                            <div class="card__body">
+                                <a class="card__enlace" href="#">
+                                    <div class="card__informacion">
+                                        <div class="card__contenedor-imagen">
+                                            <img class="card__imagen" src="https://image.tmdb.org/t/p/original/mXB2XGbKoRx9LHsCK9RIs9tfGxa.jpg" alt="">
+                                            <p class="card__year">20233</p>
+                                        </div>
+                                        <div class="card__descripcion">
+                                            <p class="card__descripcion-titulo">Batman</p>
+                                            <div class="datos__contenedor">
+                                                <p class="dato dato_calificacion dato_calificacion--small">6.05/<span class="dato__rango dato__rango--small">10</span></p>
+                                                <p class="dato dato--font-small dato__duracion">2h 03min</p>
+                                                <p class="dato dato--font-small dato__año">2024</p>
+                                            </div>
+                                            <p class="card__sinopsis">Batman lidera a la Liga de la Justicia en una batalla épica contra una amenaza cósmica que pone en peligro el universo.</p>
+                                            <p class="card__atributo card__genero"><span class="card__propiedad">Genero:</span> Acción</p>
+                                            <p class="card__atributo card__actores"><span class="card__propiedad">Actores:</span> Brus Wain</p>
+                                        </div>
+                                    </div>
+                                    <p class="card__titulo">Batman</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="card">
+                            <div class="card__body">
+                                <a class="card__enlace" href="#">
+                                    <div class="card__informacion">
+                                        <div class="card__contenedor-imagen">
+                                            <img class="card__imagen" src="https://image.tmdb.org/t/p/original/aOT8n3YOOkInZ5VHJN4FffHrm43.jpg" alt="">
+                                            <p class="card__year">20233</p>
+                                        </div>
+                                        <div class="card__descripcion">
+                                            <p class="card__descripcion-titulo">Batman</p>
+                                            <div class="datos__contenedor">
+                                                <p class="dato dato_calificacion dato_calificacion--small">6.05/<span class="dato__rango dato__rango--small">10</span></p>
+                                                <p class="dato dato--font-small dato__duracion">2h 03min</p>
+                                                <p class="dato dato--font-small dato__año">2024</p>
+                                            </div>
+                                            <p class="card__sinopsis">Batman lidera a la Liga de la Justicia en una batalla épica contra una amenaza cósmica que pone en peligro el universo.</p>
+                                            <p class="card__atributo card__genero"><span class="card__propiedad">Genero:</span> Acción</p>
+                                            <p class="card__atributo card__actores"><span class="card__propiedad">Actores:</span> Brus Wain</p>
+                                        </div>
+                                    </div>
+                                    <p class="card__titulo">Batman</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="card">
+                            <div class="card__body">
+                                <a class="card__enlace" href="#">
+                                    <div class="card__informacion">
+                                        <div class="card__contenedor-imagen">
+                                            <img class="card__imagen" src="https://image.tmdb.org/t/p/original/fe15BYAlUaFi1cHHgGjfe3vRMYE.jpg" alt="">
+                                            <p class="card__year">20233</p>
+                                        </div>
+                                        <div class="card__descripcion">
+                                            <p class="card__descripcion-titulo">Batman</p>
+                                            <div class="datos__contenedor">
+                                                <p class="dato dato_calificacion dato_calificacion--small">6.05/<span class="dato__rango dato__rango--small">10</span></p>
+                                                <p class="dato dato--font-small dato__duracion">2h 03min</p>
+                                                <p class="dato dato--font-small dato__año">2024</p>
+                                            </div>
+                                            <p class="card__sinopsis">Batman lidera a la Liga de la Justicia en una batalla épica contra una amenaza cósmica que pone en peligro el universo.</p>
+                                            <p class="card__atributo card__genero"><span class="card__propiedad">Genero:</span> Acción</p>
+                                            <p class="card__atributo card__actores"><span class="card__propiedad">Actores:</span> Brus Wain</p>
+                                        </div>
+                                    </div>
+                                    <p class="card__titulo">Batman</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="card">
+                            <div class="card__body">
+                                <a class="card__enlace" href="#">
+                                    <div class="card__informacion">
+                                        <div class="card__contenedor-imagen">
+                                            <img class="card__imagen" src="https://image.tmdb.org/t/p/original/ohuQKczwixbfgFNr8FMqaHzeJLM.jpg" alt="">
+                                            <p class="card__year">20233</p>
+                                        </div>
+                                        <div class="card__descripcion">
+                                            <p class="card__descripcion-titulo">Batman</p>
+                                            <div class="datos__contenedor">
+                                                <p class="dato dato_calificacion dato_calificacion--small">6.05/<span class="dato__rango dato__rango--small">10</span></p>
+                                                <p class="dato dato--font-small dato__duracion">2h 03min</p>
+                                                <p class="dato dato--font-small dato__año">2024</p>
+                                            </div>
+                                            <p class="card__sinopsis">Batman lidera a la Liga de la Justicia en una batalla épica contra una amenaza cósmica que pone en peligro el universo.</p>
+                                            <p class="card__atributo card__genero"><span class="card__propiedad">Genero:</span> Acción</p>
+                                            <p class="card__atributo card__actores"><span class="card__propiedad">Actores:</span> Brus Wain</p>
+                                        </div>
+                                    </div>
+                                    <p class="card__titulo">Batman</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="card">
+                            <div class="card__body">
+                                <a class="card__enlace" href="#">
+                                    <div class="card__informacion">
+                                        <div class="card__contenedor-imagen">
+                                            <img class="card__imagen" src="https://image.tmdb.org/t/p/original/njZaFiyUfzIu08WakoPDtz5E6Ld.jpg" alt="">
+                                            <p class="card__year">20233</p>
+                                        </div>
+                                        <div class="card__descripcion">
+                                            <p class="card__descripcion-titulo">Batman</p>
+                                            <div class="datos__contenedor">
+                                                <p class="dato dato_calificacion dato_calificacion--small">6.05/<span class="dato__rango dato__rango--small">10</span></p>
+                                                <p class="dato dato--font-small dato__duracion">2h 03min</p>
+                                                <p class="dato dato--font-small dato__año">2024</p>
+                                            </div>
+                                            <p class="card__sinopsis">Batman lidera a la Liga de la Justicia en una batalla épica contra una amenaza cósmica que pone en peligro el universo.</p>
+                                            <p class="card__atributo card__genero"><span class="card__propiedad">Genero:</span> Acción</p>
+                                            <p class="card__atributo card__actores"><span class="card__propiedad">Actores:</span> Brus Wain</p>
+                                        </div>
+                                    </div>
+                                    <p class="card__titulo">Batman</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="card">
+                            <div class="card__body">
+                                <a class="card__enlace" href="#">
+                                    <div class="card__informacion">
+                                        <div class="card__contenedor-imagen">
+                                            <img class="card__imagen" src="https://image.tmdb.org/t/p/original/bjzKQIzstuPwLdQ5qj23JS55rbO.jpg" alt="">
+                                            <p class="card__year">20233</p>
+                                        </div>
+                                        <div class="card__descripcion">
+                                            <p class="card__descripcion-titulo">Batman</p>
+                                            <div class="datos__contenedor">
+                                                <p class="dato dato_calificacion dato_calificacion--small">6.05/<span class="dato__rango dato__rango--small">10</span></p>
+                                                <p class="dato dato--font-small dato__duracion">2h 03min</p>
+                                                <p class="dato dato--font-small dato__año">2024</p>
+                                            </div>
+                                            <p class="card__sinopsis">Batman lidera a la Liga de la Justicia en una batalla épica contra una amenaza cósmica que pone en peligro el universo.</p>
+                                            <p class="card__atributo card__genero"><span class="card__propiedad">Genero:</span> Acción</p>
+                                            <p class="card__atributo card__actores"><span class="card__propiedad">Actores:</span> Brus Wain</p>
+                                        </div>
+                                    </div>
+                                    <p class="card__titulo">Batman</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="card">
+                            <div class="card__body">
+                                <a class="card__enlace" href="#">
+                                    <div class="card__informacion">
+                                        <div class="card__contenedor-imagen">
+                                            <img class="card__imagen" src="https://image.tmdb.org/t/p/original/9rk0NJXs1izgJPZwbkSrkiVFWMQ.jpg" alt="">
+                                            <p class="card__year">20233</p>
+                                        </div>
+                                        <div class="card__descripcion">
+                                            <p class="card__descripcion-titulo">Batman</p>
+                                            <div class="datos__contenedor">
+                                                <p class="dato dato_calificacion dato_calificacion--small">6.05/<span class="dato__rango dato__rango--small">10</span></p>
+                                                <p class="dato dato--font-small dato__duracion">2h 03min</p>
+                                                <p class="dato dato--font-small dato__año">2024</p>
+                                            </div>
+                                            <p class="card__sinopsis">Batman lidera a la Liga de la Justicia en una batalla épica contra una amenaza cósmica que pone en peligro el universo.</p>
+                                            <p class="card__atributo card__genero"><span class="card__propiedad">Genero:</span> Acción</p>
+                                            <p class="card__atributo card__actores"><span class="card__propiedad">Actores:</span> Brus Wain</p>
+                                        </div>
+                                    </div>
+                                    <p class="card__titulo">Batman</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="card">
+                            <div class="card__body">
+                                <a class="card__enlace" href="#">
+                                    <div class="card__informacion">
+                                        <div class="card__contenedor-imagen">
+                                            <img class="card__imagen" src="https://image.tmdb.org/t/p/original/aOT8n3YOOkInZ5VHJN4FffHrm43.jpg" alt="">
+                                            <p class="card__year">20233</p>
+                                        </div>
+                                        <div class="card__descripcion">
+                                            <p class="card__descripcion-titulo">Batman</p>
+                                            <div class="datos__contenedor">
+                                                <p class="dato dato_calificacion dato_calificacion--small">6.05/<span class="dato__rango dato__rango--small">10</span></p>
+                                                <p class="dato dato--font-small dato__duracion">2h 03min</p>
+                                                <p class="dato dato--font-small dato__año">2024</p>
+                                            </div>
+                                            <p class="card__sinopsis">Batman lidera a la Liga de la Justicia en una batalla épica contra una amenaza cósmica que pone en peligro el universo.</p>
+                                            <p class="card__atributo card__genero"><span class="card__propiedad">Genero:</span> Acción</p>
+                                            <p class="card__atributo card__actores"><span class="card__propiedad">Actores:</span> Brus Wain</p>
+                                        </div>
+                                    </div>
+                                    <p class="card__titulo">Batman</p>
+                                </a>
+                            </div>
+                        </li>
+                   </ul>
+                    <form class="pelicula__formulario" action="">
+                        <a class="boton" href="">Cargar Más Peliculas</a>
+                    </form>
+                </div>
+                <aside class="destacadas">
+                    <div class="menu-inferior">
+                        <h2 class="menu-inferior__titulo menu-inferior__titulo--color">Películas Destacadas</h2>
+                        <ul class="menu-inferior__lista menu-inferior__lista--grid">
+                            <a class="menu-inferior__link centrar menu-inferior__link--activo" href="#">Día</a>
+                            <a class="menu-inferior__link centrar" href="#">Semana</a>
+                        </ul>
+                    </div>
+                        <ul class="contenedor__lista">
+                            <li class="card">
+                                <div class="card__body">
+                                    <a class="card__enlace" href="#">
+                                        <div class="card__informacion--aside">
+                                            <div class="card__contenedor-imagen">
+                                                <img class="card__imagen card__imagen--aside" src="https://image.tmdb.org/t/p/original/aOT8n3YOOkInZ5VHJN4FffHrm43.jpg" alt="">
+                                            </div>                                            
+                                            <div class="card__descripcion--aside">
+                                                <p class="card__descripcion-titulo">Batman</p>
+                                                <div class="datos__contenedor">
+                                                    <p class="dato dato_calificacion dato_calificacion--small">6.05/<span class="dato__rango dato__rango--small">10</span></p>
+                                                    <p class="dato dato--font-small dato__duracion">2h 03min</p>
+                                                    <p class="dato dato--font-small dato__año">2024</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <div class="card__body">
+                                    <a class="card__enlace" href="#">
+                                        <div class="card__informacion--aside">
+                                            <div class="card__contenedor-imagen">
+                                                <img class="card__imagen card__imagen--aside" src="https://cuevana.biz/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FbjzKQIzstuPwLdQ5qj23JS55rbO.jpg&w=96&q=75" alt="">
+                                            </div>                                            
+                                            <div class="card__descripcion--aside">
+                                                <p class="card__descripcion-titulo">Batman</p>
+                                                <div class="datos__contenedor">
+                                                    <p class="dato dato_calificacion dato_calificacion--small">6.05/<span class="dato__rango dato__rango--small">10</span></p>
+                                                    <p class="dato dato--font-small dato__duracion">2h 03min</p>
+                                                    <p class="dato dato--font-small dato__año">2024</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>                         
+                            <li class="card">
+                                <div class="card__body">
+                                    <a class="card__enlace" href="#">
+                                        <div class="card__informacion--aside">
+                                            <div class="card__contenedor-imagen">
+                                                <img class="card__imagen card__imagen--aside" src="https://cuevana.biz/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FbjzKQIzstuPwLdQ5qj23JS55rbO.jpg&w=96&q=75" alt="">
+                                            </div>                                            
+                                            <div class="card__descripcion--aside">
+                                                <p class="card__descripcion-titulo">Batman</p>
+                                                <div class="datos__contenedor">
+                                                    <p class="dato dato_calificacion dato_calificacion--small">6.05/<span class="dato__rango dato__rango--small">10</span></p>
+                                                    <p class="dato dato--font-small dato__duracion">2h 03min</p>
+                                                    <p class="dato dato--font-small dato__año">2024</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>                         
+                            <li class="card">
+                                <div class="card__body">
+                                    <a class="card__enlace" href="#">
+                                        <div class="card__informacion--aside">
+                                            <div class="card__contenedor-imagen">
+                                                <img class="card__imagen card__imagen--aside" src="https://cuevana.biz/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FbjzKQIzstuPwLdQ5qj23JS55rbO.jpg&w=96&q=75" alt="">
+                                            </div>                                            
+                                            <div class="card__descripcion--aside">
+                                                <p class="card__descripcion-titulo">Batman</p>
+                                                <div class="datos__contenedor">
+                                                    <p class="dato dato_calificacion dato_calificacion--small">6.05/<span class="dato__rango dato__rango--small">10</span></p>
+                                                    <p class="dato dato--font-small dato__duracion">2h 03min</p>
+                                                    <p class="dato dato--font-small dato__año">2024</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>                         
+                        </ul>
+                </aside>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__contenedor">
+            <div class="footer__flex">
+                <div class="footer__contenedor-imagen">
+                    <img class="footer__logo" src="./img/cuevana3.avif" alt="">
+                </div>
+                <ul class="footer__lista-menu">
+                    <li class="footer__menu-item"><a class="footer__menu-link" href="#">Inicio</a></li>
+                    <li class="footer__menu-item"><a class="footer__menu-link" href="#">Peliculas</a></li>
+                    <li class="footer__menu-item"><a class="footer__menu-link" href="#">Series</a></li>
+                    <li class="footer__menu-item"><a class="footer__menu-link" href="#">Genero</a></li>
+                </ul>
+                <div class="footer__redes">
+                    <ul class="footer__lista-redes">
+                        <li class="footer__item-red"><a class="footer__link-red" href=""><img class="footer__imagen-red" src="./img/icon-faceboock.png" alt=""></li></a>
+                        <li class="footer__item-red"><a class="footer__link-red" href=""><img class="footer__imagen-red" src="./img/twitter.png" alt=""></li></a>
+                        <li class="footer__item-red"><a class="footer__link-red" href=""><img class="footer__imagen-red" src="./img/icon-youtube.png" alt=""></li></a>
+                    </ul>
+                </div>
+            </div>
+            <p class="footer__derechos-reservados">&copy; <span class="footer__year"></span> Cuevana 3. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="./js/index.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>
+
+
+
+

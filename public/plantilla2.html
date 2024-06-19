@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Cuevana 3</title>
+    <link rel="stylesheet" href="./css/normalice.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="img/cuevana.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+
+</head>
+<body>
+    <header class="header">
+        <div class="header__contenedor">
+            <div class="header__flex">
+                <div class="header__wrapper">
+                    <div class="header__contenedor-imagen">
+                        <a class="header__link-logo" href="index.html">
+                            <img class="header__logo" src="./img/cuevana3.avif" alt="logo">
+                        </a>
+                    </div>
+                    <div class="contenedor__hamburger">
+                        <div class="hamburger">
+                            <div class="hamburger__bar"></div>
+                            <div class="hamburger__bar"></div>
+                            <div class="hamburger__bar"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__contenedor-nav">
+                    <div class="contenedor__menu">
+                        <nav class="nav">
+                            <ul class="menu__lista">
+                                <li class="menu__item">
+                                    <a class="menu__link" href="#">Inicio</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__link" href="#">Peliculas
+                                        <img class="menu__link-icon-down" src="./img/down.png" alt="">
+                                    </a>
+                                    <ul class="sub-menu">
+                                        <li class="sub-menu__item"><a class="sub__menu-link" href="/peliculas">Últimas publicadas</a></li>
+                                        <li class="sub-menu__item"><a class="sub__menu-link" href="/peliculas/estrenos">Estrenos</a></li>
+                                        <li class="sub-menu__item"><a class="sub__menu-link" href="/peliculas/tendencias/semana">Tendencias semana</a></li>
+                                        <li class="sub-menu__item"><a class="sub__menu-link" href="/peliculas/tendencias/dia">Tendencias día</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__link" href="#">Series
+                                        <img class="menu__link-icon-down" src="./img/down.png" alt="">
+                                    </a>
+                                    <ul class="sub-menu">
+                                        <li class="sub-menu__item"><a class="sub__menu-link" href="/series">Series</a></li>
+                                        <li class="sub-menu__item"><a class="sub__menu-link" href="/series/estrenos">Estrenos</a></li>
+                                        <li class="sub-menu__item"><a class="sub__menu-link" href="/episodios">Episodios</a></li>
+                                        <li class="sub-menu__item"><a class="sub__menu-link" href="/series/tendencias/dia">Tendencias día</a></li>
+                                        <li class="sub-menu__item"><a class="sub__menu-link" href="/series/tendencias/semana">Tendencias semana</a></li>
+                                    </ul>                                    
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__link" href="#">Generos
+                                        <img class="menu__link-icon-down" src="./img/down.png" alt="">
+                                    </a>
+                                    <ul class="sub-menu sub-menu-genero">
+                                        
+                                    </ul>                                    
+                                </li>
+                            </ul>
+                        </nav>
+                        <form class="form__busqueda">
+                            <div class="form__contenedor-boton">
+                                <button class="btn__search" type="submit">
+                                    <img src="./img/search-svgrepo-com (2).svg" alt="search">
+                                </button>
+                            </div>
+                            <input class="form__input-busqueda" placeholder="Buscador..." type="search" name="" id="">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>    
+    <!-- <section class="hero">
+            <div class="hero__contenedor-imagen">
+                <img class="hero__imagen" src="./img/hero.jpeg" alt="">
+            </div>
+            <div class="hero__contenedor">
+                <div class="hero__contenido">
+                    <a class="hero__titutlo"Intensamente 2 </a>
+                    <a class="hero__titutlo">Dead Pool 3 <span class="hero__genero">Película</span></a>
+                     <div class="datos__contenedor">
+                        <p class="dato dato_calificacion dato_calificacion--small">6.05/<span class="dato__rango dato__rango--small">10</span></p>
+                        <p class="dato  dato__duracion">2h 03min</p>
+                        <p class="dato  dato__año">2024</p>
+                    </div> 
+                    <div class="hero__informacion">
+                        <p class="hero__descripcion">Mientrass los rebeldes se preparan para la batalla contra el Mundo Madre, se forjan vínculos inquebrantables, emergen héroes... y nacen leyendas.</p>
+                    </div>
+                     <a class="boton hero__boton" href="#">Ver Película</a> 
+                    
+                    <video id="miVideo"  autoplay muted controls>
+                        <source src="https://res.cloudinary.com/dj5mpbo6m/video/upload/v1715011408/Poster%20peliculas/ewh7jsgp10bykyutwqwz.mp4" type="video/mp4">
+                    </video>
+                    <a class="hero__titutlo">Intensamente 2 </a>
+                    
+                </div>
+            </div>
+    </section> -->
+    <section class="hero">
+        <div class="hero__contenedor-imagen">
+            <img class="hero__imagen" src="./img/hero.jpeg" alt="">
+        </div>
+        <div class="hero__contenedor">
+            <div class="hero__body ">
+                <div class="hero__contenido-principal ">
+                    <a class="hero__titutlo" href="#">Intensamente 2</a>
+                    <div>
+                        <div class="datos__contenedor">
+                            <p class="dato dato_calificacion">6.05/<span class="dato__rango dato__rango--small">10</span></p>
+                            <p class="dato  dato__duracion">2h 03min</p>
+                            <p class="dato  dato__year">2024</p>
+                        </div>
+                        <!-- <p class="hero__genero ocultar">Ciencia Ficción</p> -->
+                    </div>
+                    <div class="hero__contenedor-informacion">
+                        <p class="hero__descripcion">Mientrass los rebeldes se preparan para la batalla contra el Mundo Madre, se forjan vínculos inquebrantables, emergen héroes... y nacen leyendas.</p>
+                    </div>
+                    <div class="hero__footer">
+                        <a class="boton" href="#">
+                            <i class="iconify icon--play" data-icon="bi:play-fill" style="color: white;"></i>
+                            Ver Pelicula
+                        </a>
+                    </div>
+                </div>
+                <div class="hero__contenedor-video ocultar">
+                    <video class="hero__video ocultar" autoplay >
+                        <source class="direccion__video" src="" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <div class="hero__contenedor-boton-cerrar">
+                <button class="hero__boton-cerrar"></button>
+            </div>
+        </div>
+    </section>
+   
+   
+    <div class="menu">
+        <div class="menu__contenedor">
+            <ul class="menu-inferior__lista">
+                <a class="menu-inferior__link menu-inferior__link--activo" href="#">Últimas</a>
+                <a class="menu-inferior__link" href="#">Tendencia</a>
+                <a class="menu-inferior__link" href="#">Estrenos</a>
+            </ul>
+        </div>
+    </div>
+    
+    <main class="peliculas">
+        <div class="peliculas__contenedor">
+            <div class="seccion__peliculas">
+                <ul class="peliculas__lista">
+                </ul>
+                <form class="pelicula__formulario" action="">
+                    <a class="boton" href="">Cargar Más Peliculas</a>
+                </form>
+            </div>
+        </div>
+    </main>
+   
+    <footer class="footer">
+        <div class="footer__contenedor">
+            <div class="footer__flex">
+                <div class="footer__contenedor-imagen">
+                    <img class="footer__logo" src="./img/cuevana3.avif" alt="">
+                </div>
+                <div class="footer__redes">
+                    <ul class="footer__lista-redes">
+                        <li class="footer__item-red"><a class="footer__link-red" href=""><img class="footer__imagen-red" src="./img/icon-faceboock.png" alt=""></li></a>
+                        <li class="footer__item-red"><a class="footer__link-red" href=""><img class="footer__imagen-red" src="./img/twitter.png" alt=""></li></a>
+                        <li class="footer__item-red"><a class="footer__link-red" href=""><img class="footer__imagen-red" src="./img/icon-youtube.png" alt=""></li></a>
+                    </ul>
+                </div>
+            </div>
+            <p class="footer__derechos-reservados">&copy; <span class="footer__year"></span> Cuevana 3. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+    <script src="./js/selectores.js"></script>
+    <script src="./js/peticiones.js"></script>
+    <script src="./js/crear-elementos.js"></script>
+    <script src="./js/eventos.js"></script>
+    <script src="./js/app.js"></script>
+    <!-- <script src="./js/navigation.js"></script> -->
+
+</html>
+
+
+
+

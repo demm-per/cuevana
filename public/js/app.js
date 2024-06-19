@@ -1,0 +1,4 @@
+(()=>{
+    crearGenero();
+    crearContenedorPelicula();
+})();
